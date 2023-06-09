@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop multiple images using html , css and js</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="top">
+        <p>Drag and Drop images</p>
+        <button class="btn" type="button">Upload</button>
+      </div>
+      <form action="/Upload" method="post" class="dragover">
+        <span class="inner">
+          Drag and Drop image here or
+          <label for="file" class="select">Browse</label>
+        </span>
+        <input hidden id="file" name="file" type="file" class="file" multiple />
+      </form>
+      <div class="container"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
